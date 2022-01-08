@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/indir"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0.1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="1"
+        android:bufferType="normal"
+        android:clickable="false"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="@color/material_on_background_disabled"
+        android:textColor="#8C8C10"
+        android:textColorHighlight="#F3DA02"
+        android:textColorHint="#CDDC39"
+        android:textColorLink="#CDDC39"
+        android:textCursorDrawable="@android:drawable/presence_invisible"
+        android:textSize="25sp"
+        app:drawableTint="@color/material_on_background_disabled" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#F44336"
+        android:hint="İsim-Soyisim"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:backgroundTint="#F44336"
+        android:hint="Semt"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:backgroundTint="#F44336"
+        android:hint="Numara"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Müşteri Ekle"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInsert"
+        android:backgroundTint="#01852D"
+        android:text="Müşteriyi Güncelle"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:backgroundTint="#FF0000"
+        android:text="Müşteriyi Sil"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:backgroundTint="#73059A"
+        android:text="Müşteriyi Getir"
+        android:textSize="24dp" />
+</RelativeLayout>
